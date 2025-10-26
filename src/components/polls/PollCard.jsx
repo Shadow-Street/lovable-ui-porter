@@ -33,7 +33,7 @@ import { createPageUrl } from "@/utils";
 import { usePlatformSettings } from "../hooks/usePlatformSettings";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import AdDisplay from '../dashboard/AdDisplay'; // Corrected Path
-import toast from 'react-hot-toast'; // Import toast for notifications
+import { toast } from 'sonner';
 import { User, Subscription } from '@/api/entities'; // Import Subscription entity
 
 export default function PollCard({ poll, user, userVote, onVoteSubmit, onViewDetails, onDelete, isLocked, userPledge }) {

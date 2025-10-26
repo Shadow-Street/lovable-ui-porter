@@ -19,7 +19,7 @@ import {
   Shield,
   Crown
 } from "lucide-react";
-import { toast } from "react-hot-toast"; // Assuming react-hot-toast for toast notifications
+import { toast } from "sonner";
 
 export default function VoteModal({ open, onClose, poll, userVote, onVote }) {
   const [selectedVote, setSelectedVote] = useState(userVote || null);
