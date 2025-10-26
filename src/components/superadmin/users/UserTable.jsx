@@ -612,7 +612,7 @@ export default function UserTable({ users, roles, currentAdmin, onUsersUpdate })
                   )}
                   {(selectedUser.trust_score || 50) > 0 && (
                     <Button variant="outline" size="sm" className="text-red-600 font-semibold" onClick={() => handleTrustScoreChange(-(selectedUser.trust_score || 50))}>
-                      MIN (-{(selectedUser.trust_score || 50)).toFixed(0)})
+                      MIN (-{(selectedUser.trust_score || 50).toFixed(0)})
                     </Button>
                   )}
                 </div>
