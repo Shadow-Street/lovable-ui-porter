@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { RefundRequest, User, Event, Ticket } from '@/api/entities'; // Added Event and Ticket entities
+import { RefundRequest, User, Event, EventTicket } from '@/api/entities';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -139,7 +139,7 @@ export default function RefundManagement({ user }) {
   // NEW: Function to load tickets
   const loadTickets = async () => {
     try {
-      const ticketsData = await Ticket.list(); // Assuming Ticket.list() exists
+      const ticketsData = await EventTicket.list();
       setTickets(ticketsData);
     } catch (error) {
       console.error('Error loading tickets:', error);
