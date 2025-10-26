@@ -551,7 +551,7 @@ export default function UserTable({ users, roles, currentAdmin, onUsersUpdate })
                   <p className="text-xs text-blue-600">
                     Valid Range: 0.00 - 100.00 | 
                     Max Increase: +{(100 - (selectedUser.trust_score || 50)).toFixed(2)} | 
-                    Max Decrease: -{(selectedUser.trust_score || 50)).toFixed(2)}
+                    Max Decrease: -{(selectedUser.trust_score || 50).toFixed(2)}
                   </p>
                 </div>
               </div>
