@@ -31,7 +31,6 @@ import { toast } from "sonner";
 import ChatRoomCard from "../components/chat/ChatRoomCard";
 import CreateRoomModal from "../components/chat/CreateRoomModal";
 import ChatInterface from "../components/chat/ChatInterface";
-import "./../components/chat/ChatRoomCard.css";
 
 // Sample data for fallback
 const sampleRooms = [
