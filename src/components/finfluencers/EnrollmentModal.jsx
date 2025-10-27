@@ -21,7 +21,8 @@ import {
   Loader2
 } from 'lucide-react';
 import { format } from 'date-fns';
-import { base44 } from '@/api/base44Client';
+import { supabase } from '@/integrations/supabase/client';
+import { User } from '@/api/entities';
 import { toast } from 'sonner';
 
 export default function EnrollmentModal({ open, onClose, course, influencer }) {
